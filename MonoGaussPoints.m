@@ -1,13 +1,13 @@
 function xw = MonoGaussPoints(n)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Function TriGaussPoints provides the Gaussian points and weights %
+% Function MonoGaussPoints provides the Gaussian points and weights %
 % for the Gaussian quadrature of order n for the standard interval. %
 % %
-% Input: n - the order of the Gaussian quadrature (n<=12) %
+% Input: n - the order of the Gaussian quadrature (n<=8 or n=64)  %
 % %
 % Output: xw - a n by 2 matrix: %
-% 1st column gives the x-coordinates of points %
-% 2rd column gives the weights %
+% 1st column gives the weights %
+% 2rd column gives the x-coordinates of points %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if (n == 2)
 xw=[1.0000000000000000	-0.5773502691896257
